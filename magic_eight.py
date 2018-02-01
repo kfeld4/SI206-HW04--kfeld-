@@ -14,6 +14,6 @@ answer_list = ["it is certain", "It is decidedly so", "Without a doubt",
 "My sources say no", "Outlook not so good", "Very doubtful"]
 
 def pick_answer():
-    print(random.choice(answer_list))
+    return print(random.choice(answer_list))
 
 pick_answer()

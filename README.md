@@ -1,7 +1,7 @@
 # SI206-HW04--kfeld-
 
 Camille Johnson 
-uniqname: camjohnson
+uniqname: camjohns
 GitHub ID: camjohns123
 section number: 003
 

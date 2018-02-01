@@ -2,9 +2,11 @@ import random
 
 question_list = []
 
-def ask_question():
-    response = input("What is your question?")
-    question_list.append(response)
+def check_question():
+    if "?" not in response:
+        print ("I’m sorry, I can only answer questions")
+    else:
+        pick_answer()
 
 answer_list = ["it is certain", "It is decidedly so", "Without a doubt",
 "Yes definitely", "You may rely on it","As I see it, yes",
@@ -16,4 +18,9 @@ answer_list = ["it is certain", "It is decidedly so", "Without a doubt",
 def pick_answer():
     return print(random.choice(answer_list))
 
-pick_answer()
+while True:
+    response = input("What is your question?")
+    question_list.append(response)
+    if response =="quit":
+        break
+    check_question()
